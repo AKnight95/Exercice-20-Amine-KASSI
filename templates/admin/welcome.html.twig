@@ -1,0 +1,26 @@
+{# @var ea \EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext #}
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+
+
+{% block page_title 'Espace Administrateur' %}
+
+
+
+{% block page_content %}
+    
+
+    <div id="easyAdminWelcome">
+
+        <h2>Bienvenue, Admin {{app.user.Pseudo}}</h2>
+
+        <p>
+            <strong>Vous êtes à présent dans l'espace d'administration. Vous pouvez créer, ajouter, éditer ou supprimer des utilisateurs, des classes, des personnages ou encore des images.</strong> Vous avez la possibilité d'y accéder directement via le menu latéral sur votre gauche.
+        </p>
+
+        <img src="{{ asset('assets/Images/SpectralRegister.jpg')}}" alt="image de fond"/>
+
+    </div>
+
+    
+{% endblock %}

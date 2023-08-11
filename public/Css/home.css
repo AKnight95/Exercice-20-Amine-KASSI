@@ -1,0 +1,304 @@
+/*****************************************NAVBAR**************************************************/
+
+* {
+    margin:0;
+    padding:0;
+    }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: black;
+}
+
+a, a:hover, a:visited, a:active
+{
+	color:black;
+	text-decoration:none;
+    text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 13px rgb(0, 0, 0),
+    0 0 15px rgb(0, 0, 0);
+}
+
+body {
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+}
+
+#imgFondHeader{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    transition: ease 1.5s;
+}
+
+header:hover #imgFondHeader{
+    filter: brightness(35%)!important;
+}
+
+.titre2{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 13px rgb(0, 0, 0),
+    0 0 15px rgb(0, 0, 0);
+    z-index: 1;
+  }
+
+/*****************************************************NAVBAR************************************************************/
+.navbar{
+    height: 7rem;
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+}
+
+.nav-item{
+    margin: 2rem;
+}
+
+.element{
+    padding-top: 0.7rem;
+}
+
+.dropdown-menu{
+    text-align: end;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0;
+    border-right: 2px solid black;
+    padding: 0;
+}
+
+.dropdown-menu-lg-end{
+    text-align: end;
+    padding-top: 0.7rem;
+    border-right: 2px solid black;
+    border-left: 0;
+}
+
+a.dropdown-item{
+    text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 13px rgb(0, 0, 0),
+    0 0 15px rgb(0, 0, 0);
+    border-radius: 0;
+    color: white;
+}
+
+a.dropdown-item:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 0;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 13px rgb(0, 0, 0),
+    0 0 15px rgb(0, 0, 0);
+}
+
+.navRight{
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.rounded-circle{
+    height: 3rem;
+    width: 3rem;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+#userName{
+    color: white;
+    text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 13px rgb(0, 0, 0),
+    0 0 15px rgb(0, 0, 0);
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-align: end;
+    font-weight: bold;
+}
+
+
+
+
+.titre2{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Orbitron', sans-serif;
+    -webkit-text-stroke: 1px #00000047;
+    z-index: 6;
+}
+
+.content{
+    min-height: 100vh;
+}
+
+
+
+/*************************************FOOTER**********************************************/
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    right: auto;
+    left: auto;
+    width: 100%;
+}
+
+/*#####################################################RESPONSIVE########################################################*/
+
+@media (max-width: 992px){
+
+    /*****************************Header*******************************/
+
+    .titre2{
+        font-size: 1.5rem;
+    }
+
+    /*************NavBar***********/
+
+    .navbar{
+        width: auto;
+    }
+
+    .navRight{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .nav-item{
+        margin: 0.5rem;
+    }
+
+    .container-fluid{
+        padding: 0;
+    }
+
+    #navbarLeftAlignExample{
+        background-color: #000000e3;
+        border-radius: 7px;
+    }
+
+    .navbar-toggler:focus{
+        text-decoration: none;
+        outline: 0;
+        box-shadow: -10px -4px 20px 4rem #000000;
+        border-radius: 50%;
+    }
+
+    .navbar-toggler{
+        border-radius: 50%;
+        color: white;
+        border-color: black;
+        background-color: black;
+        box-shadow: -10px -4px 20px 4rem black;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .dropdown-menu-lg-end{
+        border-right: none;
+        border-left: 2px solid rgb(255, 255, 255);
+    }
+
+    .dropdown-menu{
+        text-align: left !important;
+    }
+
+    #userName{
+        color: white;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        text-align: start;
+        font-weight: bold;
+    }
+
+    .logo .nav-link {
+        text-align: center;
+        margin: 1rem;
+
+    }
+
+
+    /*********Block 1*********/
+
+    .intro{
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    .intro h1{
+        font-size: 1.5rem;
+    }
+
+    .intro p{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .imgFond1 video{
+        width: auto !important;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .button2{
+        height: 5rem;
+        width: 55%;
+    }
+
+    .slider2{
+        width: 85%;
+    }
+
+    .slideDiv{
+        height: 35rem;
+    }
+
+    .imgOutro{
+        height: 25rem;
+        background-position: 75%;
+    }
+
+    .block2 h1{
+        padding: 1rem;
+    }
+
+    .button2{
+        font-size: 1.5rem;
+    }
+}
