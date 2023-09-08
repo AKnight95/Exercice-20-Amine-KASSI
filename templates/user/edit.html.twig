@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier profil{% endblock %}
+
+{% block body %}
+    <h1>Modifier profil</h1>
+
+    {{ include('user/_form.html.twig', {'button_label': 'Modifier'}) }}
+
+    <a href="{{ path('app_user') }}">Retour</a>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        const form = document.getElementById('profile-form');
+        const actionUrl = form.getAttribute('data-action-url'); data-action-url
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            try {
+                const response = await axios.post(actionUrl, formData);
+                if (response.data.success) {
+                    alert('Profile updated successfully');
+                } else {
+                    alert('Profile update failed');
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
+{% endblock %}
+

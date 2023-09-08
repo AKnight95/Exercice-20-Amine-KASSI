@@ -121,7 +121,7 @@
                             <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
                               <li id="userName">{{ app.user.nom }}</li>
                               <li><hr class="dropdown-divider" /></li>
-                              <li><a class="dropdown-item" href="#">Profil</a></li>
+                              <li><a class="dropdown-item" href="{{ path('app_user')}}">Profil</a></li>
         
                               {% if is_granted('ROLE_ADMIN') %}
                                 <li><a class="dropdown-item" href="{{ path('admin')}}">Espace Admin</a></li>
@@ -154,7 +154,9 @@
               </nav>
         </header>
 
-        {% block body %}{% endblock %}
+        {% block body %}
+        
+        {% endblock %}
         
         <footer class="page-footer font-small special-color-dark pt-4 shadow-5-strong">
 

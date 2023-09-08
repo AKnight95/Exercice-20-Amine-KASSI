@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block stylesheets %}
+     <link rel="stylesheet" href="{{ asset('Css/home.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+        <h1>Profil utilisateur</h1>
+
+        <div>
+            Nom: {{ app.user.nom }} </br>
+            Bio: {{ app.user.bio }} </br>
+            Email: {{ app.user.email }}</br>
+            Téléphone: {{ app.user.telephone }}</br>
+            Adresse: {{ app.user.adresse }}</br>
+        </div>
+
+        <a href="{{ path('user_edit', {'id': app.user.id}) }}">Modifier</a>
+     
+    </div>
+{% endblock %}

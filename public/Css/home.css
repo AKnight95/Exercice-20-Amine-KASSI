@@ -26,6 +26,7 @@ body {
     position: relative;
     font-family: 'Orbitron', sans-serif;
     font-weight: lighter;
+    min-height: 100vh;
 }
 
 header {
@@ -165,6 +166,7 @@ a.dropdown-item:hover{
 
 .content{
     min-height: 100vh;
+    padding: 5rem;
 }
 
 
